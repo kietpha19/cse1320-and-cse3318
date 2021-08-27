@@ -1,0 +1,32 @@
+[Running] cd "/Users/kietpha/coding/structure/" && gcc structFile.c -o structFile && "/Users/kietpha/coding/structure/"structFile
+line 0: 1, 2
+
+x = 1
+y = 2
+line 1: 3, 4
+
+x = 3
+y = 4
+line 2: 5, 6
+
+x = 5
+y = 6
+point 0: (1, 2)
+point 1: (3, 4)
+point 2: (5, 6)
+pts.x 1
+pts.y 2
+center.x 1107296257
+center.y 2
+pts.x 3
+pts.y 4
+center.x 1107296260
+center.y 6
+pts.x 5
+pts.y 6
+center.x 1107296265
+center.y 12
+center is: (369098755, 4)
+
+[Done] exited with code=0 in 0.214 seconds
+
