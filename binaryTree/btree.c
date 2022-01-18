@@ -92,6 +92,23 @@ void printDataPostOrder(BNode *pNode)
     }
 }
 
+//have to have a quese of node pointer
+/* void print_level_order(BNode *pNode){
+    if(pNode == NULL) return;
+    int last = 0;
+    int first = 0;
+    int *q = malloc(50*sizeof(int));
+    q[last++] = pNode->data;
+
+    while(first != last){
+        printf("%d\n", q[first++]);
+
+        if(pNode->pLeft != NULL) q[last++] = pNode->pLeft->data;
+        if(pNode->pRight != NULL) q[last++] = pNode->pRight->data;
+    } 
+    free(q);
+} */
+
 int main(void)
 {
     // Create root of tree
@@ -116,6 +133,8 @@ int main(void)
     printDataPreOrder(pRoot);
     printf("Post-order transversal (same as delete)\n");
     printDataPostOrder(pRoot);
+    printf("level-order trasversal\n");
+    print_level_order(pRoot);
     deleteAllNodes(pRoot);
     return EXIT_SUCCESS;
 }

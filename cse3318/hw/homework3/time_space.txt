@@ -1,0 +1,20 @@
+Task 1
+Assume you have an array of k SORTED linked lists.
+What is the time and space complexity to use MinHeap to merge these k SORTED linked lists? Note that for this question you only need to give the time complexity of merging using a min-heap. You assume the given linked lists are already sorted. Do not include in your answer the time to sort a liked list.
+Assume the TOTAL number of nodes in all the lists is N (that is N is the sum of the number of nodes in each list). In the example given for Task 3, N is 16 (5nodes + 3nodes + 7nodes + 1node).  
+
+Time complexity(N,k):
+
+Since the array of linked lists is part of the input data (that is how the lists are provided), you should NOT count the array itself in the space complexity.
+Space complexity(N,k):
+
+//answer for task 1
+psuedo code for the tast will look like:
+
+for(i = 0; i<= N; i++){   // N iteration
+    pop(heap) //the the minimun element in the heap //this take O(1)
+    sinkdown(heap, 0) // fix the heap  //this take O(k)
+}
+
+therefore, the time complexity of the function will be O(Nlogk)
+space complexity: O(k). we sorting the array in-place which cost O(1) space. And the heap cost O(k)
